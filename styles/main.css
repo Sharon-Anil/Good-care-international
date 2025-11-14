@@ -1,0 +1,332 @@
+/* Custom Styles for Good Care International Tours and Travels */
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    margin-top: -80px;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Navigation arrows removed */
+.hero-nav {
+    display: none;
+}
+
+.hero-dots {
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in-up Animation for Scroll */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Service Card Hover Effect */
+.service-card {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery Image Hover Effect */
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+/* Testimonials Slider */
+.testimonials-container {
+    position: relative;
+}
+
+.testimonials-track {
+    display: flex;
+}
+
+.testimonial-slide {
+    flex-shrink: 0;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-nav {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .hero-nav.prev {
+        left: 1rem;
+    }
+    
+    .hero-nav.next {
+        right: 1rem;
+    }
+    
+    .whatsapp-float {
+        width: 56px;
+        height: 56px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .whatsapp-float i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Smooth Scroll Offset */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Nav Link Active State */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4f46e5;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Tour Tabs */
+.tour-tab {
+    transition: all 0.3s ease;
+}
+
+.tour-tab.active {
+    background-color: #4f46e5 !important;
+    color: white !important;
+}
+
+.tour-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    min-height: 96px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Footer logo */
+footer .logo-container {
+    min-width: 80px;
+    min-height: 80px;
+}
+
+/* Ensure logo is visible and properly sized on mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        min-width: 80px;
+        min-height: 80px;
+    }
+}
+
+/* Brand Name Styles */
+.brand-name {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.brand-line-1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-line-2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-line-3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4f46e5;
+    text-transform: capitalize;
+    margin-top: 2px;
+}
+
+.brand-line-4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #f59e0b;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+/* Responsive Brand Name */
+@media (min-width: 768px) {
+    .brand-line-1 {
+        font-size: 1.75rem;
+    }
+    
+    .brand-line-2 {
+        font-size: 1.75rem;
+    }
+    
+    .brand-line-3 {
+        font-size: 1.25rem;
+    }
+    
+    .brand-line-4 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .brand-line-1 {
+        font-size: 2rem;
+    }
+    
+    .brand-line-2 {
+        font-size: 2rem;
+    }
+    
+    .brand-line-3 {
+        font-size: 1.5rem;
+    }
+    
+    .brand-line-4 {
+        font-size: 1.125rem;
+    }
+}
+
+/* Footer Brand Name Styles */
+.brand-text-footer {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+}
+
+.brand-footer-line-1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.brand-footer-line-2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #f59e0b;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-top: 2px;
+}
+

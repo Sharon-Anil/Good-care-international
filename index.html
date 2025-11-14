@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Good Care International Tours and Travels - Best International Travel Agency in Kerala. Explore the world with outstanding travel experiences.">
+    <meta name="keywords" content="travel agency kerala, international travel, tours, holidays, visa services, study abroad, best travel agency">
+    <meta name="author" content="Good Care International Tours and Travels">
+    <meta property="og:title" content="Good Care International Tours and Travels | Best Travel Agency in Kerala">
+    <meta property="og:description" content="Explore the world with the best international travel agency in Kerala">
+    <meta property="og:type" content="website">
+    <title>Good Care International Tours and Travels | Best International Travel Agency in Kerala</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="logo-container w-24 h-24 md:w-28 md:h-28 flex-shrink-0">
+                    <img src="images/logo.png.jpeg" alt="Good Care International Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="brand-name">
+                    <div class="brand-text">
+                        <div class="brand-line-1">Good</div>
+                        <div class="brand-line-2">Care</div>
+                        <div class="brand-line-3">International</div>
+                        <div class="brand-line-4">Tours and Travels</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">About Us</a>
+                <a href="#holidays" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Holidays</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Services</a>
+                <a href="#blog" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Blog</a>
+                <a href="#gallery" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Gallery</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 transition font-medium">Contact Us</a>
+            </div>
+            <button class="md:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="#home" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+                <a href="#about" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">About Us</a>
+                <a href="#holidays" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Holidays</a>
+                <a href="#services" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Services</a>
+                <a href="#blog" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Blog</a>
+                <a href="#gallery" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Gallery</a>
+                <a href="#contact" class="block nav-link text-gray-700 hover:text-indigo-600 font-medium">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero-section relative h-screen overflow-hidden">
+        <div class="hero-slider relative w-full h-full">
+            <div class="hero-slide active" style="background-image: url('images/airplane1.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white px-4 fade-in">
+                        <p class="text-sm md:text-base mb-4 uppercase tracking-wider">Best International travel agency in kerala</p>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+                            Explore the World with the Best<br>International Travel Agency in Kerala
+                        </h1>
+                        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                            Good Care International, one of the Best International Travel Agency in Kerala, is dedicated to providing outstanding travel experiences, whether you're visiting Kerala's breathtaking landscapes or going abroad.
+                        </p>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-lg" onclick="openBookingModal()">
+                            Let's Go Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/airplane2.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white px-4 fade-in">
+                        <p class="text-sm md:text-base mb-4 uppercase tracking-wider">Best International travel agency in kerala</p>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+                            Travel the World with the Best<br>Tour & Travel Agency in Kerala
+                        </h1>
+                        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                            Good Care International, known as the Best Tour & Travel Agency in Kerala, delivers exceptional travel experiences, from Kerala's scenic beauty to global destinations.
+                        </p>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-lg" onclick="openBookingModal()">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/airplane3.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white px-4 fade-in">
+                        <p class="text-sm md:text-base mb-4 uppercase tracking-wider">Best International travel agency in kerala</p>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+                            Trusted by Travelers:<br>Best Tour Operators in Kerala
+                        </h1>
+                        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                            Good Care International, one of the best tour operators in Kerala, offers personalized travel services that cater to your needs, whether discovering the serene beauty of Kerala or traveling abroad for new adventures.
+                        </p>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-lg" onclick="openBookingModal()">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-up">
+                    <p class="text-indigo-600 font-semibold mb-2">KNOW More</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6" style="font-family: 'Playfair Display', serif;">About Us</h2>
+                    <h3 class="text-2xl md:text-3xl font-bold text-indigo-600 mb-4">Your Trusted Partner for National and International Tours, Best Tour & Travel Agency in Kerala</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        At Good Care International, we are committed to creating flawless and unforgettable travel experiences. As the top travel agency in Kerala, we specialize in customized itineraries, ensuring every detail is handled for your comfort and happiness.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Whether you're planning an international vacation or exploring Kerala's rich culture, we offer reliable assistance backed by years of expertise and a Kerala tourism-accredited tour operator. From thrilling adventures to peaceful retreats, our dedicated team crafts itineraries tailored to your preferences.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        As one of the best tour operators in Kerala, we provide a range of options—from luxurious getaways to budget-friendly travels—all designed to make your journey stress-free and memorable.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        With Good Care International, your trip is in capable hands, promising lifelong memories every step of the way.
+                    </p>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition transform hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 gap-4 fade-in-up">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Travel" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Travel" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=600" alt="Travel" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Travel" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <p class="text-indigo-600 font-semibold mb-2">What We Offer</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Our Services</h2>
+                <p class="text-xl text-gray-600">Discover the Best Travel Services With Us!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto" id="services-grid">
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up">
+                    <div class="service-icon w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-umbrella-beach text-5xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Holidays</h3>
+                    <p class="text-gray-600">Plan your perfect holiday with our customized packages for domestic and international destinations.</p>
+                </div>
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up">
+                    <div class="service-icon w-24 h-24 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-5xl text-amber-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Study Abroad</h3>
+                    <p class="text-gray-600">Specialized support for students pursuing education overseas with comprehensive guidance.</p>
+                </div>
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up">
+                    <div class="service-icon w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-passport text-5xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Visa Services</h3>
+                    <p class="text-gray-600">Expert assistance with visa processing for international travel and study abroad programs.</p>
+                </div>
+                <!-- Additional Services (Hidden by default) -->
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up hidden-service" style="display: none;">
+                    <div class="service-icon w-24 h-24 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-plane text-5xl text-amber-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Air Ticketing</h3>
+                    <p class="text-gray-600">Best deals on domestic and international flights with 24/7 customer support and flexible booking options.</p>
+                </div>
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up hidden-service" style="display: none;">
+                    <div class="service-icon w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-stamp text-5xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Document Attestation</h3>
+                    <p class="text-gray-600">Professional document attestation services for educational certificates, personal documents, and commercial papers.</p>
+                </div>
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up hidden-service" style="display: none;">
+                    <div class="service-icon w-24 h-24 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-5xl text-amber-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Travel Insurance</h3>
+                    <p class="text-gray-600">Comprehensive travel insurance coverage to protect you and your family during your journey abroad.</p>
+                </div>
+                <div class="service-card text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition bg-white fade-in-up hidden-service" style="display: none;">
+                    <div class="service-icon w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-id-card text-5xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Passport Services</h3>
+                    <p class="text-gray-600">Complete passport application assistance, renewal services, and expedited processing for urgent travel needs.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button id="view-all-services-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition transform hover:scale-105">
+                    View All Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="holidays" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Tours</h2>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button class="tour-tab active px-6 py-2 bg-indigo-600 text-white rounded-full font-semibold" data-tab="international">International</button>
+                    <button class="tour-tab px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300" data-tab="domestic">Domestic</button>
+                </div>
+            </div>
+
+            <!-- International Tours -->
+            <div id="international-tours" class="tour-content">
+                <div class="mb-8 fade-in-up">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Best International Tour Operators In Kerala</h3>
+                    <p class="text-gray-600 text-lg">Discover seamless international travel with the best international travel agency in Kerala. From personalized itineraries to end-to-end support, we ensure stress-free and unforgettable journeys.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Kerala')">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Kerala Backwaters" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Kerala</h4>
+                            <p class="text-sm text-gray-600">God's Own Country</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Dubai')">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Dubai</h4>
+                            <p class="text-sm text-gray-600">City of Gold</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Thailand')">
+                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&h=400&fit=crop" alt="Thailand" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Thailand</h4>
+                            <p class="text-sm text-gray-600">Land of Smiles</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Maldives')">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Maldives" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Maldives</h4>
+                            <p class="text-sm text-gray-600">Tropical Paradise</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Singapore')">
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&h=400&fit=crop" alt="Singapore" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Singapore</h4>
+                            <p class="text-sm text-gray-600">Lion City</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Malaysia')">
+                        <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&h=400&fit=crop" alt="Malaysia" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Malaysia</h4>
+                            <p class="text-sm text-gray-600">Truly Asia</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Europe')">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Europe" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Europe</h4>
+                            <p class="text-sm text-gray-600">Historic Beauty</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('USA')">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop" alt="USA" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">USA</h4>
+                            <p class="text-sm text-gray-600">Land of Opportunities</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Australia')">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Australia" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Australia</h4>
+                            <p class="text-sm text-gray-600">Down Under</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Bali')">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&h=400&fit=crop" alt="Bali" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Bali</h4>
+                            <p class="text-sm text-gray-600">Island of Gods</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Hong Kong')">
+                        <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=600&h=400&fit=crop" alt="Hong Kong" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Hong Kong</h4>
+                            <p class="text-sm text-gray-600">Pearl of the Orient</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Vietnam')">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600&h=400&fit=crop" alt="Vietnam" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Vietnam</h4>
+                            <p class="text-sm text-gray-600">Hidden Gem</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Cambodia')">
+                        <img src="https://images.unsplash.com/photo-1552465018-1c61b0a0b0e3?w=600&h=400&fit=crop" alt="Cambodia" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Cambodia</h4>
+                            <p class="text-sm text-gray-600">Kingdom of Wonder</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Paris')">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Paris" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Paris</h4>
+                            <p class="text-sm text-gray-600">City of Light</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Switzerland')">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Switzerland" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Switzerland</h4>
+                            <p class="text-sm text-gray-600">Alpine Paradise</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Japan')">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" alt="Japan" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Japan</h4>
+                            <p class="text-sm text-gray-600">Land of the Rising Sun</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Domestic Tours -->
+            <div id="domestic-tours" class="tour-content hidden">
+                <div class="mb-8 fade-in-up">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Best Domestic Tour Operators In Kerala</h3>
+                    <p class="text-gray-600 text-lg">Discover seamless and memorable travel experiences with the best tour operators in Kerala, offering exceptional service and tailored travel solutions.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Kerala')">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Kerala Backwaters" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Kerala</h4>
+                            <p class="text-sm text-gray-600">God's Own Country</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Delhi-Agra')">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=400&fit=crop" alt="Taj Mahal" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Delhi-Agra</h4>
+                            <p class="text-sm text-gray-600">Historic Monuments</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Goa')">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e4f2?w=600&h=400&fit=crop" alt="Goa Beaches" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Goa</h4>
+                            <p class="text-sm text-gray-600">Beach Paradise</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Hyderabad')">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" alt="Hyderabad" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Hyderabad</h4>
+                            <p class="text-sm text-gray-600">City of Pearls</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Rajasthan')">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=400&fit=crop" alt="Rajasthan" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Rajasthan</h4>
+                            <p class="text-sm text-gray-600">Land of Kings</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Kashmir')">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Kashmir" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Kashmir</h4>
+                            <p class="text-sm text-gray-600">Paradise on Earth</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Manali')">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Manali" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Manali</h4>
+                            <p class="text-sm text-gray-600">Hill Station</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                    <div class="tour-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up cursor-pointer" onclick="openBookingModalWithDestination('Shimla')">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Shimla" class="w-full h-48 object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-bold text-gray-800 mb-1">Shimla</h4>
+                            <p class="text-sm text-gray-600">Queen of Hills</p>
+                            <p class="text-indigo-600 font-semibold mt-2">Book Now →</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Why Choose Us</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Comprehensive Travel Solutions</h3>
+                    <p class="text-gray-600">We cover all your travel needs, from air ticketing to hotel bookings.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Visa Assistance</h3>
+                    <p class="text-gray-600">Hassle-free visa processing for international travel and study abroad programs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Study Abroad Guidance</h3>
+                    <p class="text-gray-600">Specialized support for students pursuing education overseas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">24/7 Customer Support</h3>
+                    <p class="text-gray-600">Dedicated assistance to ensure a smooth and stress-free experience.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition transform hover:scale-105" onclick="openBookingModal()">
+                    Contact Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Testimonials</h2>
+                <p class="text-xl text-gray-600">Our Happy Clients</p>
+            </div>
+            <div class="testimonials-slider max-w-4xl mx-auto relative">
+                <div class="testimonials-container overflow-hidden">
+                    <div class="testimonials-track flex transition-transform duration-500">
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="bg-indigo-50 p-8 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-gray-800 mb-2">Vaishnav kr</h4>
+                                <p class="text-gray-600 text-sm mb-4">November 2024</p>
+                                <p class="text-gray-700 text-lg italic">
+                                    "I had the pleasure of interacting with the ticketing staff at Good Care International tours & travels, and I must say that they provided the best service I've ever experienced."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="bg-indigo-50 p-8 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-gray-800 mb-2">Linto Varghese</h4>
+                                <p class="text-gray-600 text-sm mb-4">November 2024</p>
+                                <p class="text-gray-700 text-lg italic">
+                                    "We had an amazing 4 days in Bangkok & Pattaya organized by Good Care. Everything was planned and organized neatly without any hustle."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="bg-indigo-50 p-8 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-gray-800 mb-2">Bindu Paul</h4>
+                                <p class="text-gray-600 text-sm mb-4">December 2024</p>
+                                <p class="text-gray-700 text-lg italic">
+                                    "Good Care International assisted me in organising our Dubai trip. The team assisted with tickets and everything was perfectly arranged."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="bg-indigo-50 p-8 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-gray-800 mb-2">Anoop Kumar</h4>
+                                <p class="text-gray-600 text-sm mb-4">June 2024</p>
+                                <p class="text-gray-700 text-lg italic">
+                                    "Big thanks to Good Care International Tours & Travels for arranging such a fantastic holiday for my family."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="testimonial-nav prev absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-indigo-600 text-white w-10 h-10 rounded-full hover:bg-indigo-700 transition">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-nav next absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-indigo-600 text-white w-10 h-10 rounded-full hover:bg-indigo-700 transition">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Gallery</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e4f2?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600" alt="Travel" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Recent Blogs</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-gray-500 text-sm mb-2">December 12, 2024</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Best Places to Visit in Rajasthan in December in 2024</h3>
+                        <p class="text-gray-600 mb-4">Rajasthan, the "Land of Kings," is one of the best places to visit in Rajasthan in December for a royal and cultural experience.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-700">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e4f2?w=800" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-gray-500 text-sm mb-2">May 27, 2025</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bali Tour Package from Kerala – Your Dream Island Getaway Starts Here!</h3>
+                        <p class="text-gray-600 mb-4">Bali, famously known as the Island of Gods, boasts tropical beaches, vibrant culture, and stunning landscapes.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-700">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" alt="Blog" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-gray-500 text-sm mb-2">Apr 26, 2025</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Goa Tour Package from Kochi – Enjoy a Beach Vacation</h3>
+                        <p class="text-gray-600 mb-4">Goa, often referred to as the beach capital of India, offers pristine beaches, vibrant nightlife, and Portuguese heritage.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-700">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" style="font-family: 'Playfair Display', serif;">Get In Touch</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="fade-in-up">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-indigo-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Address</p>
+                                    <p class="text-gray-600">1st Floor, Canara bank Building, Icon Towers, M.C. Road, Angamaly, Pin: 683572, Kerala, India.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-indigo-600 text-xl mr-4"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Phone</p>
+                                    <p class="text-gray-600">+972 54 947 0080</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp text-indigo-600 text-xl mr-4"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">WhatsApp</p>
+                                    <p class="text-gray-600">+972 54 947 0080</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-indigo-600 text-xl mr-4"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Email</p>
+                                    <p class="text-gray-600">info@goodcaretravels.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-container h-64 rounded-lg overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1234567890123!2d76.3456789!3d10.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDA3JzI0LjQiTiA3NsKwMjAnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in-up">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" placeholder="Your Phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="logo-container w-20 h-20 flex-shrink-0">
+                            <img src="images/logo.png.jpeg" alt="Good Care International Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div class="brand-name">
+                            <div class="brand-text-footer">
+                                <div class="brand-footer-line-1">Good Care</div>
+                                <div class="brand-footer-line-2">International</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Your trusted partner for international travel and tours. Best International travel agency in kerala.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-indigo-400 transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-indigo-400 transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Services</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-indigo-400 transition">Testimonials</a></li>
+                        <li><a href="#holidays" class="text-gray-400 hover:text-indigo-400 transition">Holidays</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-indigo-400 transition">Gallery</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-indigo-400 transition">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-indigo-400 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Air Ticketing</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Document Attestation</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Travel Insurance</a></li>
+                        <li><a href="#holidays" class="text-gray-400 hover:text-indigo-400 transition">Holidays</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Visa Services</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Passport Services</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-indigo-400 transition">Study Abroad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tours</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#holidays" class="text-gray-400 hover:text-indigo-400 transition">International</a></li>
+                        <li><a href="#holidays" class="text-gray-400 hover:text-indigo-400 transition">Domestic</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Good Care International Tours and Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/972549470080" target="_blank" class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <h2 class="text-3xl font-bold text-indigo-600 mb-6" style="font-family: 'Playfair Display', serif;">Book Your Trip</h2>
+            <form id="booking-form" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 mb-2">Full Name *</label>
+                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Phone Number *</label>
+                    <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Destination *</label>
+                    <select name="destination" id="booking-destination" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="">Select Destination</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Delhi-Agra">Delhi-Agra</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Kashmir">Kashmir</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Shimla">Shimla</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Travel Date *</label>
+                    <input type="date" name="date" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Additional Notes</label>
+                    <textarea name="notes" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    <i class="fab fa-whatsapp mr-2"></i>Send via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/hero.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tours.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
